@@ -1,0 +1,98 @@
+clase personaje:()
+pass
+    nombre="default"
+    fuerza=0
+    inteligencia=0
+    defensa=0
+    vida=0 
+
+ def_init_(self, nombre, fuerza, inteligencia, defensa, vida):
+           self._nombre=nombre
+           self._fuerza=fuerza
+           self._inteligencia=inteligencia
+           self._defensa=defensa
+           self._vida=vida
+def atributos(self):
+      print(self._nombre, ":", sep="")
+      print(".fuerza:", self._fuerza)
+      print("inteligencia:", self._inteligencia)
+      print("defensa:", self._defensa)
+      print("vida:", self._vida)
+ 
+def subir_nivel(self, fuerza, inteligencia, defenza):
+    self._fuerza= self.fuerza + fuerza
+    self._inteligencia= self.inteligencia + inteligencia
+    self._defensa= self.defensa + defnsa
+
+def esta_vivo(self):
+    return self._vida > 0
+ 
+def morir(self_):
+    self._vida = 0
+    print(self._nombre,  "ha muerto")
+
+def daño (self._enemigo):
+    return self._fuerza - enemigo.defensa
+
+def atacar(self,_ enemigo):
+    daño= self._daño(enemigo)
+    enemigo._vida = enemigo._vida-daño 
+    print(self_.nombbre, "ha realixado", daño "puntos de daño a",enemigo.nombre)
+    if enemigo.esta_vivo():
+    print("la vida de", enemigo._nombre, "es". enemigo._vida)
+    else:
+    enemigo._morir()
+class guerrero(personaje):
+def_init_(self, nombre, fuerza, inteligencia, defensa, vida, espada):
+      super()._init_(nombre, fuerza, inteligenci, defensa, vida)
+       self.espada = espada
+def cambiar_arma(self):
+     opcion ? init(imput("eligaun arma :(1)acero valyrio, daño 8. (2) matadragones, daño 10"))
+    if opcion == 1:
+    self.espada = 8
+   elif opcion == 2:
+   self.espada =10
+    else:
+   print("nombre de arma incorrecto")
+
+def atributos(self): 
+   super().atributos()
+   print(".Espada:", self.espada)
+
+def daño(self, enemigo):
+   return self.fuerza*self.espada - enemigo.defensa
+
+class mago(personaje):
+   def_init_(self, nombre, fuerza, inteligencia, defenza, vida, libro):
+  super()._init_(nombre, fuerza, inteligencia, defenza, vida,)
+    self.libro = libro
+
+def atributos(self):
+   super().atributos()
+    print(".libro". self.libro)
+ def daño(self. enemigo):
+      return self. inteligencia*self.libro - enemigo.defenza
+goku = personahe ("goku", 20, 15, 10, 100)
+guts = guerrero ("guts", 20, 15, 10, 100, 5)
+vanessa = mago("vanessa", 20, 15, 10, 100, 5)
+goku.atacar(guts)
+guts.atacar(vanessa)
+vannessa.atacar(goku)
+goku.atributos()
+guts.atributo()
+vanessa.atributo()
+
+
+
+guts = guerrero ("guts", 20, 10, 10, 100, 5)
+gut.cambuar_arma()
+guts.atributos()
+print(guts.espada)
+
+def get_fuerza(self):  
+    return self._fuerza
+def set_fuerza(self, fuerza):
+    if fuerza < 0:
+        print("error, has introducido un valor negativo") 
+     else:   
+     self._fuerza = fuerza
